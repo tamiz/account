@@ -1,0 +1,18 @@
+ 
+<%= simple_form_for @invoice do |f| %>  
+<div class= "form-control">
+           <%= f.input :reference %>
+           <%= f.input :invoice_date %>
+           <%= f.input :customer %>
+           <%= f.input :brandmanager %>  
+           <%= f.input :narration %>
+           <%= f.input :amount %> 
+           <%= f.input :totalcollection %> 
+           <%= f.input :balance_due %> 
+           <%= f.button :button, " submit", class: "btn-primary" %>
+     
+</form>
+ </div>
+<% end %>
+
+ 

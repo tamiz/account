@@ -1,0 +1,37 @@
+
+<%= link_to '<button type="button" class="btn btn-primary">Add new bill</button>'.html_safe,new_invoice_path %>
+
+<%= link_to'<button type="button" class="btn btn-primary">Show pending bills</button>' .html_safe,invoice_pending_index %>
+
+<%= link_to '<button type="button" class="btn btn-primary">Show collected bills</button>'.html_safe,new_invoice_path %>
+<table class="table">
+	<thead>
+      <tr>
+        <th>References</th>
+        <th>Invoice Date</th>
+        <th>Customer</th>
+        <th>brandmaster</th>
+        <th>Narration</th>
+        <th>Amount</th>
+        <th>Total collection</th>
+        <th>Balance due</th>
+         <th>  </th>
+      </tr>
+    </thead>
+  <% @invoices.each do |invoice| %>
+    <tbody>
+    <tr>
+          <td><%= link_to invoice.reference, invoice_path(invoice) %></td>
+           <td><%= invoice.invoice_date %></td> 
+           <td><%= invoice.customer %></td> 
+           <td><%= invoice.brandmanager %></td>  
+           <td><%= invoice.narration %> </td>
+           <td><%= invoice.amount %> </td>
+           <td><%= invoice.totalcollection %> </td>
+           <td><%= invoice.balance_due %> </td>
+           <td><%= link_to'<button type="button" class="btn btn-primary"> Add collection</button>'.html_safe,new_invoice_path %> </td>
+                   
+    </tr>
+    </tbody>
+  <% end %>
+</table>
