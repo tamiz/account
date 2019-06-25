@@ -1,6 +1,5 @@
 <% if @invoice.balance_due > 0 %>
 <table class="table">
-  <% @invoices.each do |invoice| %>
   <thead>
       <tr>
         <th>References</th>
@@ -14,6 +13,7 @@
          <th>  </th>
       </tr>
     </thead>
+  <% @invoices.each do |invoice| %>
     <tbody>
     <tr>
           <td><%= link_to invoice.reference, invoice_path(invoice) %></td>
