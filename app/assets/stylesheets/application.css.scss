@@ -12,10 +12,11 @@
  *
  */
  @import "bootstrap";
-
- #invoice
+ #invoice 
 {
 	display:none;
-	text: bold;
+	
 }
-
+.show {
+	display: block;
+}
