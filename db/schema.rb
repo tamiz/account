@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_24_061600) do
+ActiveRecord::Schema.define(version: 2019_07_02_133453) do
 
   create_table "invoices", force: :cascade do |t|
     t.string "reference"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2019_06_24_061600) do
     t.integer "balance_due"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "newcollection"
+    t.integer "sumcollection"
   end
 
 end

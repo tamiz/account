@@ -1,6 +1,6 @@
 class InvoicesController < ApplicationController
 	def index
-		@invoices = Invoice.all
+		@invoices = Invoice.all	
 	end
 
 	def new
@@ -34,9 +34,13 @@ class InvoicesController < ApplicationController
 		 	render 'edit'
 		 end
     end
+
+   	
+
+    
     
 private
 	def invoice_params 
-		params.require(:invoice).permit(:reference, :invoice_date, :customer, :brandmanager, :narration, :amount, :totalcollection, :balance_due)
+		params.require(:invoice).permit(:reference, :invoice_date, :customer, :brandmanager, :narration, :amount, :totalcollection, :newcollection, :sumcollection, :balance_due)
     end
 end
