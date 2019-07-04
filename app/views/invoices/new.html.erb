@@ -1,12 +1,12 @@
 
 				<%= simple_form_for @invoice do |f| %>  =
-           <%= f.input :reference,  input_html: { class: 'form-control' } %>
-           <%= f.input :invoice_date, input_html: { class: 'form-control' } %>
-           <%= f.input :customer, input_html: { class: 'form-control' } %>
-           <%= f.input :brandmanager, input_html: { class: 'form-control' } %>  
-           <%= f.input :narration, input_html: { class: 'form-control' } %>
-           <%= f.input :amount, input_html: { class: 'form-control' } %> 
-           <%= f.input :totalcollection, input_html: { class: 'form-control' } %> 
+           <%= f.input :reference,  input_html: { class: 'span5' } %>
+           <%= f.input :invoice_date, input_html: { class: 'span5' } %>
+           <%= f.input :customer, input_html: { class: 'span5' } %>
+           <%= f.input :brandmanager, input_html: { class: 'span5' } %>  
+           <%= f.input :narration, input_html: { class: 'span5' } %>
+           <%= f.input :amount, input_html: { class: 'span5' } %> 
+           <%= f.input :totalcollection, input_html: { class: 'span5' } %> 
            <%= f.button :button, " submit", class: "btn-primary" %>
      			</form>
 		<% end %>
