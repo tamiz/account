@@ -29,15 +29,16 @@
     <td> New Invoice </td>
     <td> <%= @invoice.amount %> </td>
     </tr>
+    
     <tr>
     <td><%= @invoice.invoice_date %> </td>
     <td> NewCollection </td>
-    <td> <%= @invoice.newcollection += @invoice.totalcollection %>
+    <td> <%= @invoice.totalcollection += @invoice.totalcollection %>
     </tr>
      <tr>
     <td> </td>
     <td> Balance </td>
-    <td> <%= @invoice.balance_due = @invoice.amount - @invoice.newcollection %> </td>
+    <td> <%= @invoice.balance_due = @invoice.amount - @invoice.totalcollection %> </td>
     </tr>
     
 </tbody>

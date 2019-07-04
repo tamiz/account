@@ -28,8 +28,8 @@
            <td><%= invoice.brandmanager %></td>  
            <td><%= invoice.narration %> </td>
            <td><%= invoice.amount %> </td>
-           <td><%= invoice.totalcollection += invoice.totalcollection %> </td>
-           <td><%=  invoice.balance_due = invoice.amount - invoice.totalcollection   %> </td>
+           <td><%= invoice.totalcollection  %> </td>
+           <td><%=  invoice.balance_due   %> </td>
            <td><%= link_to'<button type="button" class="btn btn-primary"> Add collection</button>'.html_safe,edit_invoice_path(invoice) %> </td>
                    
     </tr>
