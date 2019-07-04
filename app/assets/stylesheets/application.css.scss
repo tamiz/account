@@ -12,11 +12,12 @@
  *
  */
  @import "bootstrap";
- #invoice 
+ 
+ #collected
 {
 	display:none;
 	
 }
-.show {
+#pending {
 	display: block;
 }

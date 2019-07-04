@@ -3,7 +3,7 @@
 
 <button type="button" class="btn btn-primary" onclick="myFunction2()">Show pending bills</button>
 
-<button type="button" class="btn btn-primary" onclick="function show()"> Show collected bills </button>
+<button type="button" class="btn btn-primary" onclick="myFunction()"> Show collected bills </button>
 
 <table class = table>
 	<thead>
@@ -37,7 +37,7 @@
   <% end %>
 </table>
 <table class = table>
-  <table id = invoice>
+  <table id = collected>
   <thead>
       <tr>
         <th>References</th>
@@ -104,11 +104,9 @@
     <% end %>
 </table>
 
-
-<button </button>
 <script>
-function myFunction(invoice) {
-  var x = document.getElementById("invoice");
+function myFunction() {
+  var x = document.getElementById("collected");
   if (x.style.display == "none") {
     x.style.display = "block";
   } 
