@@ -88,7 +88,7 @@
       </tr>
     </thead>
   <% @invoices.each do |invoice| %>
- <% if invoice.balance_due > 15000  %>
+ <% if invoice.balance_due > 0  %>
     <tbody>
     <tr>
           <td><%= link_to invoice.reference , invoice_path(invoice) %></td>
