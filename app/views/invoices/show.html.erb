@@ -32,12 +32,12 @@
     <tr>
     <td><%= @invoice.invoice_date %> </td>
     <td> NewCollection </td>
-    <td> <%= @invoice.totalcollection += @invoice.totalcollection %>
+    <td> <%= @invoice.newcollection += @invoice.totalcollection %>
     </tr>
      <tr>
     <td> </td>
     <td> Balance </td>
-    <td> <%= @invoice.balance_due = @invoice.amount - @invoice.totalcollection %> </td>
+    <td> <%= @invoice.balance_due = @invoice.amount - @invoice.newcollection %> </td>
     </tr>
     
 </tbody>
