@@ -1,10 +1,6 @@
-
 <%= link_to '<button type="button" class="btn btn-primary">Add new bill</button>'.html_safe,new_invoice_path %>
-
 <button type="button" class="btn btn-primary" onclick="myFunction2()">Show pending bills</button>
-
 <button type="button" class="btn btn-primary" onclick="myFunction()"> Show collected bills </button>
-
 <table class = table>
 	<thead>
       <tr>
@@ -19,7 +15,6 @@
       </tr>
     </thead>
   <% @invoices.each do |invoice| %>
-
     <tbody>
     <tr>
           <td><%= link_to invoice.reference, invoice_path(invoice) %></td>
@@ -30,16 +25,14 @@
            <td><%= invoice.amount %> </td>
            <td><%= invoice.totalcollection %> </td>
            <td><%=  invoice.balance_due = invoice.amount - invoice.totalcollection   %> </td>
-           <td><%= link_to'<button type="button" class="btn btn-primary"> Add collection</button>'.html_safe,edit_invoice_path(invoice) %> </td>
-                   
+           <td><%= link_to'<button type="button" class="btn btn-primary"> Add collection</button>'.html_safe,edit_invoice_path(invoice) %> </td>                  
     </tr>
     </tbody>
   <% end %>
 </table>
 
 <div id ="collected">
-<table class = table>
- 
+<table class = table> 
   <thead>
       <tr>
         <th>References</th>
@@ -64,8 +57,7 @@
            <td><%= invoice.amount %> </td>
            <td><%= invoice.totalcollection %> </td>
            <td><%= invoice.balance_due %> </td>
-           <td><%= link_to'<button type="button" class="btn btn-primary"> Add collection</button>'.html_safe,new_invoice_path %> </td>
-                   
+           <td><%= link_to'<button type="button" class="btn btn-primary"> Add collection</button>'.html_safe,new_invoice_path %> </td>               
     </tr>
     </tbody>
   <% end %>
