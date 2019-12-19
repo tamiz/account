@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 gem 'simple_form'
-gem 'rack', '~> 2.0.1'
+gem 'rack', '~> 2.0.8'
 gem 'rspec'
 
 gem 'sqlite3', '~> 1.3', '>= 1.3.11'
